@@ -82,7 +82,7 @@ async def get_note_func(c: app, m: Message, note_name, priv_notes_status):
         note_hash = next(i[1] for i in db.get_all_notes(m.chat.id) if i[0] == note_name)
         return await reply_text(
             f"Click on the button to get the note <code>{note_name}</code>",
-            reply_markup=ikb([[("Click Me!",f"https://t.me/szRosebot?start=note_{m.chat.id}_{note_hash}","url")]]))
+            reply_markup=ikb([[("Click Me!",f"https://t.me/DuskyXBot?start=note_{m.chat.id}_{note_hash}","url")]]))
     getnotes = db.get_note(m.chat.id, note_name)
     msgtype = getnotes["msgtype"]
     if not msgtype:
@@ -216,7 +216,7 @@ async def local_notes(_, m: Message):
     msg_id = m.reply_to_message.message_id if m.reply_to_message else m.message_id
     curr_pref = db_settings.get_privatenotes(grp_id)
     if curr_pref:
-        pm_kb = ikb([[("All Notes",f"https://t.me/szRosebot?start=notes_{grp_id}","url")]])
+        pm_kb = ikb([[("All Notes",f"https://t.me/DuskyXBot?start=notes_{grp_id}","url")]])
         return await m.reply_text("Click on the button below to get notes!",reply_markup=pm_kb)
     rply = f"Notes in <b>{title}</b>:\n"
     for x in getnotes:
