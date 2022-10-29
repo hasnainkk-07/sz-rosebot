@@ -189,13 +189,13 @@ async def welcome(_, message: Message):
             await message.reply_text(
                     f"""
 Thanks for adding me to your {group_name}! Don't forget follow
-my news channel @Theszrosebot.
+my news channel @DuskysUpdates.
 
 **New to Me, Touch the below button and start me in PM**
                     """,
                     reply_markup=InlineKeyboardMarkup(
             [
-                InlineKeyboardButton("quick start guide", url="http://t.me/szrosebot?start=help"),
+                InlineKeyboardButton("quick start guide", url="http://t.me/DuskyXBot?start=help"),
             ]))
 
             return await app.send_message(
