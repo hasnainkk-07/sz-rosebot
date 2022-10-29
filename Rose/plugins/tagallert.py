@@ -94,8 +94,8 @@ __HELP__ = """
 Too many mentions.. Cant you manage them all alone..
 Here is the solution
 
-If you are tagged/mentioned in a group where Rose is present
-Rose will notify it to you via private message after enabling tag alerts
+If you are tagged/mentioned in a group where Dusky is present
+Dusky will notify it to you via private message after enabling tag alerts
 
 **Commands**
 - /tagalert `on` : Turn tag alerts on
