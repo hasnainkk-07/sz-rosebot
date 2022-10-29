@@ -5,7 +5,7 @@ from pyrogram.types import InlineKeyboardButton,InlineKeyboardMarkup
 text = """
 **Formatting**
 
-Rose supports a large number of formatting 
+Dusky supports a large number of formatting 
 options to make your messages more expressive. Take a look!"""
 
 fbuttons = InlineKeyboardMarkup(
