@@ -42,7 +42,7 @@ async def gstats(_, message):
     datasiz = str(datasiz)
     storag = supun["storageSize"] / 1024
     smex = f"""
-** General Stats of Rose Bot**
+** General Stats of Dusky**
 
 • **Ram:** `{ram}`
 • **Pyrogram Version:** `{pyrover}`
