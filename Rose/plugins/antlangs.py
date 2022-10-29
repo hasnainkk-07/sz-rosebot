@@ -244,7 +244,7 @@ __MODULE__ = F_sub
 __HELP__ = """
 
 **ForceSubscribe | Channel manager:**
-- Rose can mute members who are not subscribed your channel until they subscribe
+- Dusky can mute members who are not subscribed your channel until they subscribe
 - When enabled I will mute unsubscribed members and show them a unmute button. When they pressed the button I will unmute them.
 
 **Setup**
