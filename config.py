@@ -43,7 +43,7 @@ class var(object):
 I'm a group management bot with some useful features.
 You can choose an option below, by clicking a button.
 If you have any bugs or questions on how to use me, 
-have a look at my [Docs](https://szsupunma.gitbook.io/rose-bot/), or head to @szteambots.
+have a look at my [Support Group](https://t.me/DuskysSupport), or head to @DuskysUpdates.
 
 **All commands can be used with the following: / **"""
         #Rose start menu conections(split commands on start)
@@ -90,8 +90,8 @@ An  advanced telegram Group management Bot For helpYou Protect Your Groups & Sui
         about_buttons = InlineKeyboardMarkup(
                 [
                         [
-                                InlineKeyboardButton(text="👥Support Group", url="https://t.me/szrosesupport"),
-                                InlineKeyboardButton(text="👤News Channel", url="https://t.me/Theszrosebot")
+                                InlineKeyboardButton(text="👥Support Group", url="https://t.me/DuskysSupport"),
+                                InlineKeyboardButton(text="👤News Channel", url="https://t.me/DuskysUpdates")
                         ], 
                         [ 
                                 InlineKeyboardButton(text="⚒ Source Code", url="https://github.com/szsupunma/sz-rosebot"),
@@ -109,7 +109,7 @@ An  advanced telegram Group management Bot For helpYou Protect Your Groups & Sui
         home_keyboard_pm = InlineKeyboardMarkup(
                 [
                         [
-                                InlineKeyboardButton(text="Add Me To Your Chat 🎉",url=f"http://t.me/{Config.BOT_USERNAME}?startgroup=new")
+                                InlineKeyboardButton(text="Add Me To Your Group 🎉",url=f"http://t.me/{Config.BOT_USERNAME}?startgroup=new")
                         ],
                         [
                                 InlineKeyboardButton(text="About ✨",callback_data="_about"),
@@ -119,8 +119,8 @@ An  advanced telegram Group management Bot For helpYou Protect Your Groups & Sui
                                 InlineKeyboardButton(text="Help Menu ⚒",callback_data="bot_commands")
                         ],
                         [
-                                InlineKeyboardButton(text="Website 💭",url=f"https://szrosebot.ml"),
-                                InlineKeyboardButton(text="News Channel 📢",url=f"https://t.me/szroseupdates")
+                                InlineKeyboardButton(text="Support Group💭",url=f"https://t.me/DuskysSupport"),
+                                InlineKeyboardButton(text="News Channel 📢",url=f"https://t.me/DuskysUpdates")
                         ]
                 ]
 )
