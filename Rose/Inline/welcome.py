@@ -40,7 +40,7 @@ async def commands_callbacc(_, CallbackQuery):
     )
 
 tetz = """
-Rose which will ask new Group Members to verify them by solving an emoji | number captcha.
+Dusky which will ask new Group Members to verify them by solving an emoji | number captcha.
 
 - /captcha - turn on captcha : There are two types of captcha
 - /remove - turn off captcha
