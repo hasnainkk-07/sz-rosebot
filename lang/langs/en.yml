@@ -1,7 +1,7 @@
 name : English
 
 #menu - menu.py
-menu : "Rose was created on **August 10, 2021**. \nWe are currently developing and maintaining plugins of **WilliamButcherBot**  and **Alita_Robot**, using only the **Pyrogram** library.\n\n• **creator** : [supun](https://t.me/supunma)\n• **Language** : [python 3](https://www.python.org/)\n• **Database** : [Mongo db](https://cloud.mongodb.com/)\n• **Server** : [Heroku](https://heroku.com/)\n• **Build Version** : `2.0`\n\n@Theszrosebot"
+menu : "Dusky was created on **August 10, 2022**. \nWe are currently developing and maintaining plugins of **DuskyMusicBot**  and **DuskyXBot**, using only the **Pyrogram** library.\n\n• **creator** : [Dusky](https://t.me/OFFICIAL_DUSKY)\n• **Language** : [python 3](https://www.python.org/)\n• **Database** : [Mongo db](https://cloud.mongodb.com/)\n• **Server** : [Heroku](https://heroku.com/)\n• **Build Version** : `2.0`\n\n@DuskysUpdates"
 back : "« Back"
 
 #main - main.py
@@ -95,7 +95,7 @@ app12 : "{} is not an approved user. They are affected by normal commands."
 
 #plugin - lang.py
 setting_1 : "Hello {}, I can speak many languages\n Select your language from bellow!"
-setting_2 : "[🌎](https://crwd.in/szrosebot)Language was changed Successfully \n.Changed by {}"
+setting_2 : "[🌎](https://t.me/DuskysUpdates)Language was changed Successfully \n.Changed by {}"
 
 
 #plugin - ban.py
@@ -138,7 +138,7 @@ chatb4 : "**Chat bot Successfully Deactivated In The Chat**❌"
 chatb5 : "I understand `/chatbot on` and `/chatbot off` only"
 chatb6 : "Rose Bot AI Voice Chatbot"
 chatb7 : "Rose Bot Is Best..."
-chatb8 : "Made By @szteambots..."
+chatb8 : "Made By @DuskysTeam..."
 chatb9 : "Repyping..."
 chatb10 : "**Chat bot enabled** ✅."
 chatb11 : "**Chat bot Already Activated In This Chat**"
@@ -217,8 +217,8 @@ nm5 : "**You can set nightmode only in groups :(**"
 nm6 : "**Removed This Chat From Database. This Group Will Be No Longer Closed On 12 Am (IST)"
 nm7 : "**Not Activated In This Chat**"
 nm8 : "I understand `/nightmode on` and `/nightmode off` only"
-nm9 : "🌗 12:00 Am, Group Is Closing Till 6 Am. Night Mode Started! \n**Powered By @szrosebot**"
-nm10 : "🌗 06:00 Am, Group Is Opening.\n**Powered By @szrosebot**"
+nm9 : "🌗 12:00 Am, Group Is Closing Till 6 Am. Night Mode Started! \n**Powered By @DuskyXBot**"
+nm10 : "🌗 06:00 Am, Group Is Opening.\n**Powered By @DuskyXBot**"
 nm11 : "Give other parameters too "
 nm12 : "Syntax invalid \n Try `/help nightmode`"
 nm13 : "Please enter a valid date and time...!"
