@@ -39,7 +39,7 @@ spam
 porn
 anonchannel
 
-Rose will delete user's message if locked content is sent
+Dusky will delete user's message if locked content is sent
 """
 
 @app.on_callback_query(filters.regex("_ucd"))
