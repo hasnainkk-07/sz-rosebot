@@ -18,7 +18,7 @@ from Rose.core.decorators.permissions import current_chat_permissions,member_per
 
 #====== Mongo database =========
 client = pymongo.MongoClient(MONGO_DB_URI)
-dbd = client["szrosebot"]
+dbd = client["DuskyXBot"]
 db = dbd
 lockdb = db.lockdb1
 #================================
