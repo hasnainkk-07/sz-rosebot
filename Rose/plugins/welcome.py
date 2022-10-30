@@ -212,7 +212,7 @@ my news channel @DuskysUpdates.
                 "Wow ! Owner has just joined your chat.",
             )
             
-        if member.id == 1467358214:#for @supunma 
+        if member.id == 5696423555:#for @supunma 
             return await app.send_message(
                 message.chat.id,
                 "Wow ! Developer has just joined your chat.",
