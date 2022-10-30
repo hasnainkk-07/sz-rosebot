@@ -91,14 +91,14 @@ An  advanced telegram Group management Bot For helpYou Protect Your Groups & Sui
                 [
                         [
                                 InlineKeyboardButton(text="👥Support Group", url="https://t.me/DuskysSupport"),
-                                InlineKeyboardButton(text="👤News Channel", url="https://t.me/DuskysUpdates")
+                                InlineKeyboardButton(text="👤Updates Channel", url="https://t.me/DuskysUpdates")
                         ], 
                         [ 
-                                InlineKeyboardButton(text="⚒ Source Code", url="https://github.com/szsupunma/sz-rosebot"),
-                                InlineKeyboardButton(text="📓 Documentation", url="https://szsupunma.gitbook.io/rose-bot")
+                                InlineKeyboardButton(text="⚒ Source Code", url="https://t.me/DuskysUpdates"),
+                                InlineKeyboardButton(text="📓 Documentation", url="https://t.me/DuskysUpdates")
                         ], 
                         [
-                                InlineKeyboardButton(text="🖥 How To Deploy Me", url="https://youtu.be/ZUvFSU8W7VA")
+                                InlineKeyboardButton(text="🖥 How To Deploy Me", url="https://t.me/DuskysUpdates")
                         ],
                         [
                                 InlineKeyboardButton("« Back", callback_data='startcq')
@@ -119,8 +119,8 @@ An  advanced telegram Group management Bot For helpYou Protect Your Groups & Sui
                                 InlineKeyboardButton(text="Help Menu ⚒",callback_data="bot_commands")
                         ],
                         [
-                                InlineKeyboardButton(text="Support Group💭",url=f"https://t.me/DuskysSupport"),
-                                InlineKeyboardButton(text="News Channel 📢",url=f"https://t.me/DuskysUpdates")
+                                InlineKeyboardButton(text="👥Support Group", url="https://t.me/DuskysSupport"),
+                                InlineKeyboardButton(text="👤Updates Channel", url="https://t.me/DuskysUpdates")
                         ]
                 ]
 )
