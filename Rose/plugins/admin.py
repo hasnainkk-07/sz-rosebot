@@ -251,7 +251,7 @@ async def adminlist_show(_, m: Message):
             await m.reply_text("Use /reload to reload admins list!")
         else:
             ef = f"{str(ef)}{admin_list}\n"
-            await m.reply_text("error : @slbotzone : `adminlist`")
+            await m.reply_text("error : @DuskysSupport : `adminlist`")
     return
 
 
