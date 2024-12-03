@@ -20,7 +20,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.10'
+          python-version: '3.9'
 
       # Install dependencies
       - name: Install dependencies
@@ -31,7 +31,7 @@ jobs:
       # Auto fix F-strings issues using autopep8
       - name: Fix F-strings using autopep8
         run: |
-          autopep8 --in-place --aggressive --aggressive .
+          find . -name "*.py" -exec autopep8 --in-place --aggressive --aggressive {} \;
 
       # Auto format the code using Black
       - name: Format code with Black
