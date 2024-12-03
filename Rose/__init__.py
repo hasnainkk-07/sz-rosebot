@@ -68,7 +68,7 @@ db = mongo_client.Shikari
 
 
 
-loop = asyncio.get_event_loop()
+#loop = asyncio.get_event_loop()
 
 aiohttpsession = ClientSession()
 
