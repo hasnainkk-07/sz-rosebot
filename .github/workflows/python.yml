@@ -3,14 +3,14 @@ name: Python CLI Commit Action
 on:
   push:
     branches:
-      - master # Trigger this workflow on push to the main branch
+      - master
   pull_request:
     branches:
-      - master  # Trigger on pull requests to the main branch
+      - master
 
 jobs:
   commit:
-    runs-on: ubuntu-latest  # You can change this to windows-latest or macos-latest if needed
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout repository
@@ -26,7 +26,12 @@ jobs:
         python -m venv venv
         source venv/bin/activate
         pip install --upgrade pip
-        pip install -r requirements.txt  # If you have dependencies in a requirements.txt file
+        pip install -r requirements.txt
+
+    - name: Configure Git identity
+      run: |
+        git config --global user.email "halwakk07@gmail.com"
+        git config --global user.name "Hasnain Khan"
 
     - name: Run Python CLI for Commit
       run: |
