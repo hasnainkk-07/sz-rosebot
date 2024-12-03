@@ -17,7 +17,7 @@ EmojiCaptcha==0.1.2
 captcha==0.4 
 googletrans==3.1.0a0
 telegraph==2.1.0
-pyrogram
+pyrogram==2.0.106
 pyyaml==5.4
 apscheduler
 telegraph[aio]
