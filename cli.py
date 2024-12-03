@@ -17,7 +17,7 @@ def main():
     # Set up CLI argument parsing
     parser = argparse.ArgumentParser(description="A simple Python CLI for Git commits.")
     parser.add_argument("message", type=str, help="Commit message")
-    parser.add_argument("--author", type=str, default="hasnaink-07 <halwakk07@gmail.com>", help="Author of the commit")
+    parser.add_argument("--author", type=str, default="Hasnain khan <halwakk07@gmail.com>", help="Author of the commit")
     args = parser.parse_args()
 
     # Commit the changes with the given message and author
