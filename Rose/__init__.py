@@ -26,12 +26,6 @@ import os
 
 
 
-from Rose.core.git import git
-
-git()
-
-os.system("git pull")
-
 
 
 UPDATES_CHANNEL = "https://t.me/Raiden_Support"
