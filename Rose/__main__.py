@@ -16,14 +16,7 @@ from pyrogram.types import (
     InlineKeyboardMarkup, 
     Message
 )
-from Rose import app, bot
-from Rose import (
- #   app,
-    BOT_USERNAME,
-  #  bot,
-    BOT_NAME,
-    aiohttpsession
-)
+from Rose import *
 from Rose.plugins import ALL_MODULES
 from Rose.utils import paginate_modules
 from lang import get_command
