@@ -9,38 +9,45 @@ on:
       - main
 
 jobs:
-  fix:
+  fix-errors:
     runs-on: ubuntu-latest
     steps:
+      # Checkout the code
       - name: Checkout Code
         uses: actions/checkout@v2
 
-      - name: Set up Python 3.9
+      # Set up Python
+      - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: 3.9
+          python-version: '3.10'
 
-      - name: Install Dependencies
+      # Install dependencies
+      - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install flake8 autopep8 black
+          pip install autopep8 black pylint
 
-      - name: Run Auto Fix (autopep8)
+      # Auto fix F-strings issues using autopep8
+      - name: Fix F-strings using autopep8
         run: |
-          find . -name "*.py" -exec autopep8 --in-place --aggressive --aggressive {} \;
+          autopep8 --in-place --aggressive --aggressive .
 
-      - name: Run Black Formatter
+      # Auto format the code using Black
+      - name: Format code with Black
         run: |
           black .
 
-      - name: Run Flake8 Linter
+      # Lint the code with pylint to ensure no further issues
+      - name: Lint with pylint
         run: |
-          flake8 . --max-line-length=79 --exclude=.git,__pycache__ --ignore=E501,F401,F403,F811
+          pylint --disable=all --enable=F,E,W --max-line-length=120 .
 
-      - name: Commit & Push Changes
-        run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
-          git add .
-          git commit -m "Fix code style issues"
-          git push
+      # Commit and push changes if there are any
+      - name: Commit and push changes
+        uses: EndBug/add-and-commit@v9
+        with:
+          message: "Fix code style and errors"
+          add: "."
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
