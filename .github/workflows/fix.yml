@@ -15,7 +15,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v2
 
-      - name: Set up Python
+      - name: Set up Python 3.9
         uses: actions/setup-python@v2
         with:
           python-version: 3.9
@@ -27,7 +27,7 @@ jobs:
 
       - name: Run Auto Fix (autopep8)
         run: |
-          autopep8 --in-place --aggressive --aggressive .
+          find . -name "*.py" -exec autopep8 --in-place --aggressive --aggressive {} \;
 
       - name: Run Black Formatter
         run: |
