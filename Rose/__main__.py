@@ -16,10 +16,11 @@ from pyrogram.types import (
     InlineKeyboardMarkup, 
     Message
 )
+from Rose import app, bot
 from Rose import (
-    app,
+ #   app,
     BOT_USERNAME,
-    bot,
+  #  bot,
     BOT_NAME,
     aiohttpsession
 )
