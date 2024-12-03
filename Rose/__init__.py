@@ -38,7 +38,7 @@ async def main():
     arq = ARQ(ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
 
     app = Client("Shikari", bot_token=BOT_TOKEN, api_id=API_ID, api_hash=API_HASH)
-    await app.start()
+#    await app.start()
 
     bot = app
     x = await app.get_me()
@@ -68,3 +68,4 @@ async def eor(msg: Message, **kwargs):
 
 if __name__ == "__main__":
     asyncio.run(main())
+    app.run()
