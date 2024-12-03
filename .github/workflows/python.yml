@@ -3,10 +3,10 @@ name: Python CLI Commit Action
 on:
   push:
     branches:
-      - main  # Trigger this workflow on push to the main branch
+      - master # Trigger this workflow on push to the main branch
   pull_request:
     branches:
-      - main  # Trigger on pull requests to the main branch
+      - master  # Trigger on pull requests to the main branch
 
 jobs:
   commit:
