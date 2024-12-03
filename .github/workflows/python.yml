@@ -1,0 +1,34 @@
+name: Python CLI Commit Action
+
+on:
+  push:
+    branches:
+      - main  # Trigger this workflow on push to the main branch
+  pull_request:
+    branches:
+      - main  # Trigger on pull requests to the main branch
+
+jobs:
+  commit:
+    runs-on: ubuntu-latest  # You can change this to windows-latest or macos-latest if needed
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Python 3.9
+      uses: actions/setup-python@v4
+      with:
+        python-version: 3.9
+
+    - name: Install dependencies
+      run: |
+        python -m venv venv
+        source venv/bin/activate
+        pip install --upgrade pip
+        pip install -r requirements.txt  # If you have dependencies in a requirements.txt file
+
+    - name: Run Python CLI for Commit
+      run: |
+        source venv/bin/activate
+        python cli.py "Automated commit from GitHub Actions"
