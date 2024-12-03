@@ -34,9 +34,9 @@ SUPPORT_GROUP = "https://t.me/Raiden_Updates"
 
 
 
-SUDOERS = SUDO_USERS_ID
+SUDOERS = [1805959544, 5907205317, 1284920298, 5881613383]
 
-LOG_GROUP_ID = LOG_GROUP_ID
+LOG_GROUP_ID = -1002105665930
 
 MOD_LOAD = []
 
@@ -46,9 +46,9 @@ bot_start_time = time.time()
 
 DB_URI = "RaidenRobot"
 
-MONGO_URL = MONGO_URL
+MONGO_URL = "mongodb+srv://herobh123456:hasnainkk07@hasnainkk07.uqjekii.mongodb.net/?retryWrites=true&w=majority"
 
-OWNER_ID = OWNER_ID
+OWNER_ID = 6346273488
 
 
 
