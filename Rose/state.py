@@ -5,6 +5,7 @@
 from aiohttp import ClientSession
 from httpx import AsyncClient, Timeout
 from Python_ARQ import ARQ
+import logging 
 
 # <=============================================== SETUP ========================================================>
 # Aiohttp Async Client
@@ -28,3 +29,19 @@ ARQ_API_URL = "arq.hamker.dev"
 
 arq = ARQ(ARQ_API_URL, ARQ_API_KEY, session)
 # <===================================================== END ==================================================>
+
+
+# Logger setup
+logger = logging.getLogger("RaidenBot")
+logger.setLevel(logging.DEBUG)  # Set the log level to DEBUG or INFO as per your needs
+ch = logging.StreamHandler()  # Stream to console
+ch.setLevel(logging.DEBUG)
+formatter = logging.Formatter(
+    "[%(asctime)s] [%(name)s] [%(levelname)s]: %(message)s"
+)
+ch.setFormatter(formatter)
+logger.addHandler(ch)
+
+# Initialize aiohttp session
+
+# Ensure proper cleanup when the bot shuts do
