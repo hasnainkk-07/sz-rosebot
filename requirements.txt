@@ -1,6 +1,7 @@
 aiohttp==3.8.4
 pymongo
 motor
+httpx
 psutil==5.9.1
 TgCrypto
 pykeyboard==0.1.5
