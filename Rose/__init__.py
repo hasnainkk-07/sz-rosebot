@@ -44,6 +44,8 @@ BOT_USERNAME = "Raiden_Robot"
 BOT_MENTION = "[Rᴀɪᴅᴇɴ ⋊ Sʜᴏɢᴜɴ](https://t.me/Raiden_Robot)"
 BOT_DC_ID = 1
 
+bot = app
+
 # Async Initialization Function
 async def main():
     print("[INFO]: Starting bot...")
