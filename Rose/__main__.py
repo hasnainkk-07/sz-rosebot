@@ -17,6 +17,7 @@ from pyrogram.types import (
     Message
 )
 from Rose import *
+from Rose import app, bot
 from Rose.plugins import ALL_MODULES
 from Rose.utils import paginate_modules
 from lang import get_command
@@ -239,3 +240,4 @@ if __name__ == "__main__":
         with suppress(asyncio.exceptions.CancelledError):
             loop.run_until_complete(start_bot())
         loop.run_until_complete(asyncio.sleep(1.0)) 
+          app.run()
