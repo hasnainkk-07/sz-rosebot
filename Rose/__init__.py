@@ -49,13 +49,17 @@ bot = app
 # Async Initialization Function
 async def main():
     print("[INFO]: Starting bot...")
+
+    # Start Pyrogram client
     await app.start()
 
-    # Initialize aiohttp session
+    # Initialize aiohttp session inside the event loop
+    global aiohttpsession
     aiohttpsession = ClientSession()
 
-    # ARQ Client
+    # Initialize ARQ client
     print("[INFO]: Initializing ARQ client...")
+    global arq
     arq = ARQ(ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
 
     print(f"[INFO]: {BOT_NAME} is online as @{BOT_USERNAME}")
@@ -76,3 +80,4 @@ async def eor(msg: Message, **kwargs):
 # Run the Bot
 if __name__ == "__main__":
     asyncio.run(main())
+    
