@@ -1,5 +1,6 @@
 import asyncio
 import time
+import logging
 from inspect import getfullargspec
 from aiohttp import ClientSession
 from motor.motor_asyncio import AsyncIOMotorClient
@@ -9,6 +10,7 @@ from Python_ARQ import ARQ
 import pymongo
 import os
 from config import Config
+from Rose.stats import logger, aiohttpsession, arq  # Importing logger and sessions
 
 # Configuration
 UPDATES_CHANNEL = "https://t.me/Raiden_Support"
@@ -48,7 +50,7 @@ bot = app
 
 # Async Initialization Function
 async def main():
-    print("[INFO]: Starting bot...")
+    logger.info("[INFO]: Starting bot...")
 
     # Start Pyrogram client
     await app.start()
@@ -58,11 +60,11 @@ async def main():
     aiohttpsession = ClientSession()
 
     # Initialize ARQ client
-    print("[INFO]: Initializing ARQ client...")
+    logger.info("[INFO]: Initializing ARQ client...")
     global arq
     arq = ARQ(ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
 
-    print(f"[INFO]: {BOT_NAME} is online as @{BOT_USERNAME}")
+    logger.info(f"[INFO]: {BOT_NAME} is online as @{BOT_USERNAME}")
 
     # Keep the bot running
     await asyncio.Event().wait()
@@ -79,5 +81,8 @@ async def eor(msg: Message, **kwargs):
 
 # Run the Bot
 if __name__ == "__main__":
-    asyncio.run(main())
-    
+    try:
+        logger.info("[INFO]: Running bot...")
+        asyncio.run(main())
+    except Exception as e:
+        logger.error(f"[ERROR]: {str(e)}")
