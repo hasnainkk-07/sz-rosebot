@@ -55,6 +55,8 @@ BOT_MENTION = "[Rᴀɪᴅᴇɴ ⋊ Sʜᴏɢᴜɴ](https://t.me/Raiden_Robot)"
 BOT_DC_ID = 1
 
 
+app.run()
+
     # Keep the application running
 #    await asyncio.Event().wait()
 
