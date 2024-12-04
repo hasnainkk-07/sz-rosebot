@@ -10,6 +10,7 @@ import pymongo
 import os
 from config import Config
 
+# Configuration
 UPDATES_CHANNEL = "https://t.me/Raiden_Support"
 SUPPORT_GROUP = "https://t.me/Raiden_Updates"
 API_HASH = Config.API_HASH
@@ -26,41 +27,41 @@ DB_URI = "RaidenRobot"
 MONGO_URL = "mongodb+srv://herobh123456:hasnainkk07@hasnainkk07.uqjekii.mongodb.net/?retryWrites=true&w=majority"
 OWNER_ID = 6346273488
 
+# MongoDB Clients
 myclient = pymongo.MongoClient(DB_URI)
 dbn = myclient["Shikari"]
 
 mongo_client = AsyncIOMotorClient(MONGO_URL)
 db = mongo_client.Shikari
 
+# Pyrogram Bot Client
 app = Client("hasnainkk", bot_token=BOT_TOKEN, api_id=API_ID, api_hash=API_HASH)
- 
-app.start()
 
-
-
-    # Initialize aiohttp session within an active event loop
-aiohttpsession = ClientSession()
-
-print("[INFO]: INITIALIZING ARQ CLIENT...")
-arq = ARQ(ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
-
-    
-bot = app
-  
-#x = await app.get_me()
-
+# Hardcoded Bot Info
 BOT_ID = 6342456315
 BOT_NAME = "Rᴀɪᴅᴇɴ ⋊ Sʜᴏɢᴜɴ"
 BOT_USERNAME = "Raiden_Robot"
 BOT_MENTION = "[Rᴀɪᴅᴇɴ ⋊ Sʜᴏɢᴜɴ](https://t.me/Raiden_Robot)"
 BOT_DC_ID = 1
 
+# Async Initialization Function
+async def main():
+    print("[INFO]: Starting bot...")
+    await app.start()
 
+    # Initialize aiohttp session
+    aiohttpsession = ClientSession()
 
-    # Keep the application running
-#    await asyncio.Event().wait()
+    # ARQ Client
+    print("[INFO]: Initializing ARQ client...")
+    arq = ARQ(ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
 
+    print(f"[INFO]: {BOT_NAME} is online as @{BOT_USERNAME}")
 
+    # Keep the bot running
+    await asyncio.Event().wait()
+
+# Helper Function: eor (Edit or Reply)
 async def eor(msg: Message, **kwargs):
     func = (
         (msg.edit_text if msg.from_user.is_self else msg.reply)
@@ -70,7 +71,6 @@ async def eor(msg: Message, **kwargs):
     spec = getfullargspec(func.__wrapped__).args
     return await func(**{k: v for k, v in kwargs.items() if k in spec})
 
-
-#*if __name__ == "__main__":
-   # asyncio.run(main())
-
+# Run the Bot
+if __name__ == "__main__":
+    asyncio.run(main())
