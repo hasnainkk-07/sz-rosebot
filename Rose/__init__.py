@@ -29,18 +29,19 @@ dbn = myclient["Shikari"]
 mongo_client = AsyncIOMotorClient(MONGO_URL)
 db = mongo_client.Shikari
 
-
-async def main():
-    print("INFO: Starting Shikari Robot")
-    
-    # Initialize aiohttp session within an active event loop
-    aiohttpsession = ClientSession()
-    arq = ARQ(ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
-
-    app = Client("Shikari", bot_token=BOT_TOKEN, api_id=API_ID, api_hash=API_HASH)
+app = Client("Shikari", bot_token=BOT_TOKEN, api_id=API_ID, api_hash=API_HASH)
 #    await app.start()
 
-    bot = app
+
+
+    # Initialize aiohttp session within an active event loop
+aiohttpsession = ClientSession()
+
+arq = ARQ(ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
+
+    
+bot = app
+   
     x = await app.get_me()
 
     BOT_ID = int(BOT_TOKEN.split(":")[0])
@@ -68,4 +69,4 @@ async def eor(msg: Message, **kwargs):
 
 if __name__ == "__main__":
     asyncio.run(main())
-    app.run()
+ 
