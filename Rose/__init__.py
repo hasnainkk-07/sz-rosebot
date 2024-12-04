@@ -8,7 +8,7 @@ from pyrogram.types import Message
 from Python_ARQ import ARQ
 import pymongo
 import os
-from config import *
+from config import Config
 
 UPDATES_CHANNEL = "https://t.me/Raiden_Support"
 SUPPORT_GROUP = "https://t.me/Raiden_Updates"
@@ -18,7 +18,7 @@ LOG_GROUP_ID = -1002105665930
 MOD_LOAD = []
 MOD_NOLOAD = []
 bot_start_time = time.time()
-
+BOT_TOKEN = Config.BOT_TOKEN
 DB_URI = "RaidenRobot"
 MONGO_URL = "mongodb+srv://herobh123456:hasnainkk07@hasnainkk07.uqjekii.mongodb.net/?retryWrites=true&w=majority"
 OWNER_ID = 6346273488
@@ -29,7 +29,7 @@ dbn = myclient["Shikari"]
 mongo_client = AsyncIOMotorClient(MONGO_URL)
 db = mongo_client.Shikari
 
-app = Client("Shikari", bot_token=BOT_TOKEN, api_id=API_ID, api_hash=API_HASH)
+app = Client("hasnainkk", bot_token=BOT_TOKEN, api_id=API_ID, api_hash=API_HASH)
 #    await app.start()
 
 
