@@ -50,11 +50,9 @@ BOT_USERNAME = x.username
 BOT_MENTION = x.mention
 BOT_DC_ID = x.dc_id
 
-    print(f"BOT_NAME: {BOT_NAME}")
-    print(f"BOT_USERNAME: @{BOT_USERNAME}")
 
     # Keep the application running
-    await asyncio.Event().wait()
+#    await asyncio.Event().wait()
 
 
 async def eor(msg: Message, **kwargs):
@@ -69,4 +67,4 @@ async def eor(msg: Message, **kwargs):
 
 #*if __name__ == "__main__":
    # asyncio.run(main())
- 
+
