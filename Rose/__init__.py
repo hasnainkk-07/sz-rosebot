@@ -12,7 +12,10 @@ from config import Config
 
 UPDATES_CHANNEL = "https://t.me/Raiden_Support"
 SUPPORT_GROUP = "https://t.me/Raiden_Updates"
-
+API_HASH = Config.API_HASH
+API_ID = Config.API_ID
+ARQ_API_URL = Config.ARQ_API_URL
+ARQ_API_KEY = Config.ARQ_API_KEY
 SUDOERS = [1805959544, 5907205317, 1284920298, 5881613383]
 LOG_GROUP_ID = -1002105665930
 MOD_LOAD = []
