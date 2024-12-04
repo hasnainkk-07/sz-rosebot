@@ -1,4 +1,4 @@
-FROM python:3.10.12
+FROM python:3.9.10
 
 WORKDIR /Rose
 COPY . /Rose
