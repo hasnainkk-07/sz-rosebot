@@ -10,7 +10,7 @@ from Python_ARQ import ARQ
 import pymongo
 import os
 from config import Config
-from Rose.stats import logger, aiohttpsession, arq  # Importing logger and sessions
+from Rose.state import logger, session as aiohttpsession, arq  # Importing logger and sessions
 
 # Configuration
 UPDATES_CHANNEL = "https://t.me/Raiden_Support"
