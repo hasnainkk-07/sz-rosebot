@@ -1,6 +1,7 @@
 import requests
 from pyrogram import filters
-from Rose import app,eor,arq
+from Rose import app,eor
+from Rose.state import arq
 from gpytranslate import Translator
 from pyrogram.errors import PeerIdInvalid
 from pyrogram.types import Message, User
