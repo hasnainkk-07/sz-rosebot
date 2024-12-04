@@ -45,7 +45,7 @@ bot = app
 x = await app.get_me()
 
 BOT_ID = int(BOT_TOKEN.split(":")[0])
-BOT_NAME = x.first_name + (x.last_name or "").
+BOT_NAME = x.first_name + (x.last_name or "")
 BOT_USERNAME = x.username
 BOT_MENTION = x.mention
 BOT_DC_ID = x.dc_id
