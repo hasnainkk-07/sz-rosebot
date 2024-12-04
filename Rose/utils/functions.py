@@ -4,7 +4,7 @@ from re import findall
 from re import sub as re_sub
 from sys import executable
 from pyrogram.types import Message
-from Rose import aiohttpsession as aiosession
+from Rose.state import session as aiosession
 from Rose.mongo.restart import *
 
 
