@@ -33,7 +33,8 @@ mongo_client = AsyncIOMotorClient(MONGO_URL)
 db = mongo_client.Shikari
 
 app = Client("hasnainkk", bot_token=BOT_TOKEN, api_id=API_ID, api_hash=API_HASH)
-    await app.start()
+ 
+app.start()
 
 
 
