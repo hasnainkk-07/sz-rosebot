@@ -33,7 +33,7 @@ mongo_client = AsyncIOMotorClient(MONGO_URL)
 db = mongo_client.Shikari
 
 app = Client("hasnainkk", bot_token=BOT_TOKEN, api_id=API_ID, api_hash=API_HASH)
-#    await app.start()
+    await app.start()
 
 
 
@@ -55,7 +55,6 @@ BOT_MENTION = "[Rᴀɪᴅᴇɴ ⋊ Sʜᴏɢᴜɴ](https://t.me/Raiden_Robot)"
 BOT_DC_ID = 1
 
 
-app.run()
 
     # Keep the application running
 #    await asyncio.Event().wait()
