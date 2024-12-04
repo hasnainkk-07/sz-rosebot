@@ -42,13 +42,13 @@ arq = ARQ(ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
     
 bot = app
   
-x = await app.get_me()
+#x = await app.get_me()
 
-BOT_ID = int(BOT_TOKEN.split(":")[0])
-BOT_NAME = x.first_name + (x.last_name or "")
-BOT_USERNAME = x.username
-BOT_MENTION = x.mention
-BOT_DC_ID = x.dc_id
+BOT_ID = 6342456315
+BOT_NAME = "Rᴀɪᴅᴇɴ ⋊ Sʜᴏɢᴜɴ"
+BOT_USERNAME = "Raiden_Robot"
+BOT_MENTION = "[Rᴀɪᴅᴇɴ ⋊ Sʜᴏɢᴜɴ](https://t.me/Raiden_Robot)"
+BOT_DC_ID = 1
 
 
     # Keep the application running
