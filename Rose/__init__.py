@@ -67,6 +67,6 @@ async def eor(msg: Message, **kwargs):
     return await func(**{k: v for k, v in kwargs.items() if k in spec})
 
 
-if __name__ == "__main__":
-    asyncio.run(main())
+#*if __name__ == "__main__":
+   # asyncio.run(main())
  
