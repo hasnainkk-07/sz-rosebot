@@ -41,14 +41,14 @@ arq = ARQ(ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
 
     
 bot = app
-   
-    x = await app.get_me()
+  
+x = await app.get_me()
 
-    BOT_ID = int(BOT_TOKEN.split(":")[0])
-    BOT_NAME = x.first_name + (x.last_name or "")
-    BOT_USERNAME = x.username
-    BOT_MENTION = x.mention
-    BOT_DC_ID = x.dc_id
+BOT_ID = int(BOT_TOKEN.split(":")[0])
+BOT_NAME = x.first_name + (x.last_name or "").
+BOT_USERNAME = x.username
+BOT_MENTION = x.mention
+BOT_DC_ID = x.dc_id
 
     print(f"BOT_NAME: {BOT_NAME}")
     print(f"BOT_USERNAME: @{BOT_USERNAME}")
