@@ -1,7 +1,7 @@
 FROM python:slim-bullseye
 
-WORKDIR /wbb
-RUN chmod 777 /wbb
+WORKDIR /Rose
+RUN chmod 777 /Rose
 
 RUN apt-get -qq update && apt-get -qq -y upgrade
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y git gcc build-essential
